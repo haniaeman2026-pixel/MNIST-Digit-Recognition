@@ -1,0 +1,653 @@
+/* ======================================================
+   IMPORT GOOGLE FONT
+====================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ======================================================
+   GLOBAL
+====================================================== */
+
+html,
+body,
+[class*="css"]{
+
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.stApp{
+
+    background: linear-gradient(
+        135deg,
+        #eef4ff 0%,
+        #f8fbff 40%,
+        #ffffff 100%
+    );
+
+    color:#1f2937;
+
+}
+
+/* ======================================================
+   HIDE STREAMLIT DEFAULT
+====================================================== */
+
+#MainMenu{
+
+    visibility:hidden;
+
+}
+
+footer{
+
+    visibility:hidden;
+
+}
+
+header{
+
+    visibility:hidden;
+
+}
+
+/* ======================================================
+   HERO SECTION
+====================================================== */
+
+.hero-container{
+
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #4f46e5,
+        #7c3aed
+    );
+
+    border-radius:25px;
+
+    padding:45px;
+
+    text-align:center;
+
+    color:white;
+
+    margin-bottom:35px;
+
+    box-shadow:
+    0 15px 35px rgba(37,99,235,.25);
+
+}
+
+.hero-container h1{
+
+    font-size:48px;
+
+    font-weight:800;
+
+    margin-bottom:10px;
+
+}
+
+.hero-container p{
+
+    font-size:20px;
+
+    opacity:.95;
+
+}
+
+/* ======================================================
+   DASHBOARD CARD
+====================================================== */
+
+.dashboard-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.08);
+
+    border:1px solid #e5e7eb;
+
+    min-height:180px;
+
+}
+
+.dashboard-card h2{
+
+    font-size:42px;
+
+    margin-bottom:10px;
+
+}
+
+.dashboard-card h3{
+
+    color:#2563eb;
+
+    margin-bottom:5px;
+
+}
+
+.dashboard-card p{
+
+    color:#6b7280;
+
+    font-size:18px;
+
+}
+
+.dashboard-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 18px 40px rgba(37,99,235,.20);
+
+}
+
+/* ======================================================
+   UPLOAD BOX
+====================================================== */
+
+.upload-box{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    border-left:8px solid #2563eb;
+
+    margin-bottom:20px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.upload-box h2{
+
+    color:#2563eb;
+
+}
+
+.upload-box p{
+
+    color:#6b7280;
+
+}
+/* ======================================================
+   PREDICTION BOX
+====================================================== */
+
+.prediction-box{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    margin-bottom:20px;
+
+    border-left:8px solid #10b981;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.prediction-box h2{
+
+    color:#10b981;
+
+    margin-bottom:8px;
+
+}
+
+.prediction-box p{
+
+    color:#6b7280;
+
+}
+
+/* ======================================================
+   RESULT CARD
+====================================================== */
+
+.result-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:18px;
+
+    text-align:center;
+
+    margin-bottom:15px;
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.result-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 15px 35px rgba(37,99,235,.18);
+
+}
+
+/* ======================================================
+   METRIC CARD
+====================================================== */
+
+div[data-testid="metric-container"]{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    border-left:6px solid #2563eb;
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,.08);
+
+    margin-bottom:15px;
+
+}
+
+div[data-testid="metric-container"] label{
+
+    font-weight:600;
+
+    color:#374151;
+
+}
+
+div[data-testid="metric-container"] [data-testid="stMetricValue"]{
+
+    color:#2563eb;
+
+    font-size:32px;
+
+    font-weight:700;
+
+}
+
+/* ======================================================
+   BUTTON
+====================================================== */
+
+.stButton>button{
+
+    width:100%;
+
+    border:none;
+
+    border-radius:12px;
+
+    padding:14px;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:white;
+
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #4f46e5
+    );
+
+    transition:.3s;
+
+    cursor:pointer;
+
+}
+
+.stButton>button:hover{
+
+    transform:scale(1.03);
+
+    box-shadow:
+    0 12px 25px rgba(37,99,235,.30);
+
+}
+
+/* ======================================================
+   FILE UPLOADER
+====================================================== */
+
+section[data-testid="stFileUploader"]{
+
+    background:white;
+
+    border:3px dashed #2563eb;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    box-shadow:
+    0 8px 18px rgba(0,0,0,.08);
+
+}
+
+section[data-testid="stFileUploader"]:hover{
+
+    border-color:#4f46e5;
+
+}
+
+/* ======================================================
+   IMAGE
+====================================================== */
+
+img{
+
+    border-radius:18px;
+
+    box-shadow:
+    0 12px 25px rgba(0,0,0,.15);
+
+}
+
+/* ======================================================
+   PROGRESS BAR
+====================================================== */
+
+div[data-testid="stProgressBar"]{
+
+    margin-top:15px;
+
+    margin-bottom:15px;
+
+}
+
+div[data-testid="stProgressBar"]>div>div{
+
+    background:linear-gradient(
+        90deg,
+        #10b981,
+        #2563eb
+    );
+
+}
+
+/* ======================================================
+   SUCCESS MESSAGE
+====================================================== */
+
+div[data-testid="stAlert"]{
+
+    border-radius:15px;
+
+}
+/* ======================================================
+   SIDEBAR
+====================================================== */
+
+section[data-testid="stSidebar"]{
+
+    background:linear-gradient(
+        180deg,
+        #1e293b,
+        #0f172a
+    );
+
+    border-right:2px solid rgba(255,255,255,.08);
+
+}
+
+section[data-testid="stSidebar"] *{
+
+    color:white !important;
+
+}
+
+section[data-testid="stSidebar"] h1,
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3{
+
+    color:#60a5fa !important;
+
+    font-weight:700;
+
+}
+
+/* ======================================================
+   ABOUT SECTION
+====================================================== */
+
+.about-section{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:22px;
+
+    margin-top:25px;
+
+    margin-bottom:25px;
+
+    box-shadow:
+    0 12px 30px rgba(0,0,0,.08);
+
+}
+
+.about-section h2{
+
+    color:#2563eb;
+
+    margin-bottom:15px;
+
+}
+
+.about-section p{
+
+    font-size:17px;
+
+    line-height:1.8;
+
+    color:#4b5563;
+
+}
+
+/* ======================================================
+   GRAPH CARD
+====================================================== */
+
+.element-container img{
+
+    border-radius:20px;
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.12);
+
+}
+
+/* ======================================================
+   TECHNOLOGY BADGES
+====================================================== */
+
+div[data-testid="stHorizontalBlock"] .stSuccess{
+
+    border-radius:15px;
+
+    font-weight:600;
+
+    text-align:center;
+
+    box-shadow:
+    0 8px 18px rgba(37,99,235,.12);
+
+}
+
+/* ======================================================
+   FOOTER
+====================================================== */
+
+.footer{
+
+    margin-top:40px;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #4f46e5
+    );
+
+    color:white;
+
+    box-shadow:
+    0 15px 35px rgba(37,99,235,.25);
+
+}
+
+.footer h2{
+
+    margin-bottom:12px;
+
+    font-size:30px;
+
+}
+
+.footer p{
+
+    font-size:16px;
+
+    opacity:.95;
+
+}
+
+/* ======================================================
+   SCROLLBAR
+====================================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#edf2f7;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#4f46e5;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#2563eb;
+
+}
+
+/* ======================================================
+   ANIMATIONS
+====================================================== */
+
+.hero-container,
+.dashboard-card,
+.upload-box,
+.prediction-box,
+.result-card,
+.about-section,
+.footer{
+
+    animation:fadeIn .7s ease;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ======================================================
+   RESPONSIVE DESIGN
+====================================================== */
+
+@media(max-width:768px){
+
+.hero-container h1{
+
+    font-size:32px;
+
+}
+
+.hero-container p{
+
+    font-size:16px;
+
+}
+
+.dashboard-card{
+
+    margin-bottom:15px;
+
+}
+
+.upload-box,
+.prediction-box{
+
+    padding:18px;
+
+}
+
+.footer h2{
+
+    font-size:22px;
+
+}
+
+}
