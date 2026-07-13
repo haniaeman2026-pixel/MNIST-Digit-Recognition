@@ -125,7 +125,7 @@ The dataset is automatically downloaded using TensorFlow during training.
 ## Clone Repository
 
 ```bash
-git clone https://github.com/your-username/MNIST-Digit-Recognition.git
+https://github.com/haniaeman2026-pixel/MNIST-Digit-Recognition.git
 ```
 
 ---
