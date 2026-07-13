@@ -1,59 +1,81 @@
-# 🤖 AI Digit Recognition System
+#  AI Digit Recognition System
 
-A professional Deep Learning project that recognizes handwritten digits (0–9) using a **Convolutional Neural Network (CNN)** trained on the **MNIST dataset**. The project includes a modern **Streamlit web application** where users can upload handwritten digit images and instantly receive predictions with confidence scores.
-
----
-
-## 📌 Project Overview
-
-The AI Digit Recognition System is a computer vision application developed using **TensorFlow**, **Keras**, and **Streamlit**. The model is trained on the famous MNIST handwritten digit dataset and predicts digits from uploaded images with high accuracy.
-
-This project demonstrates the complete Machine Learning workflow, including:
-
-- Data Loading
-- Image Preprocessing
-- CNN Model Training
-- Model Evaluation
-- Model Saving
-- Web Application Deployment
-- Real-Time Prediction
+![Python](https://img.shields.io/badge/Python-3.12-blue?style=for-the-badge&logo=python)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange?style=for-the-badge&logo=tensorflow)
+![Streamlit](https://img.shields.io/badge/Streamlit-Web_App-red?style=for-the-badge&logo=streamlit)
+![Deep Learning](https://img.shields.io/badge/Deep-Learning-purple?style=for-the-badge)
+![CNN](https://img.shields.io/badge/Model-CNN-success?style=for-the-badge)
 
 ---
 
-## ✨ Features
+#  Overview
 
-- 🔢 Recognizes handwritten digits (0–9)
-- 🧠 CNN-based Deep Learning model
-- 📤 Upload PNG, JPG, and JPEG images
-- 🎯 Displays predicted digit
-- 📊 Shows confidence score
-- 📈 Probability chart for all digits
-- 📱 Responsive Streamlit dashboard
-- 🎨 Professional UI with custom CSS
-- ⚡ Fast real-time prediction
+The **AI Digit Recognition System** is a Deep Learning application developed using **TensorFlow**, **Keras**, and **Streamlit** that recognizes handwritten digits (0–9) with high accuracy.
+
+The application is powered by a **Convolutional Neural Network (CNN)** trained on the famous **MNIST handwritten digit dataset**. Users can upload handwritten digit images through an interactive web interface and instantly receive the predicted digit, confidence score, and probability distribution.
+
+This project demonstrates the complete Deep Learning workflow, including data preprocessing, model training, evaluation, and deployment.
 
 ---
 
-## 🛠 Technologies Used
+#  Key Features
 
-- Python
-- TensorFlow
-- Keras
-- NumPy
-- Pillow
-- Matplotlib
-- Scikit-learn
-- Pandas
-- Streamlit
+✅ Automatic MNIST dataset download
+
+✅ Image preprocessing pipeline
+
+✅ CNN-based Deep Learning model
+
+✅ Real-time handwritten digit recognition
+
+✅ Confidence score prediction
+
+✅ Probability visualization
+
+✅ Professional Streamlit dashboard
+
+✅ Modern responsive UI
+
+✅ Model accuracy and loss graphs
+
+✅ Easy deployment and GitHub ready
 
 ---
 
-## 📂 Project Structure
+#  Application Preview
 
-```
-MNIST-Digit-Recognition/
+The application provides an elegant dashboard where users can:
+
+- Upload handwritten digit images
+- Preview uploaded images
+- Predict digits instantly
+- View confidence score
+- Analyze probability distribution
+- Explore model performance graphs
+
+---
+
+#  Deep Learning Architecture
+
+The CNN model consists of:
+
+- Conv2D Layer (32 Filters)
+- MaxPooling2D
+- Conv2D Layer (64 Filters)
+- MaxPooling2D
+- Flatten Layer
+- Dense Layer (128 Neurons)
+- Dropout Layer
+- Softmax Output Layer
+
+---
+
+#  Project Structure
+
+```text
+MNIST-Digit-Recognition
 │
-├── model/
+├── model
 │   ├── mnist_model.keras
 │   ├── accuracy.png
 │   └── loss.png
@@ -69,41 +91,78 @@ MNIST-Digit-Recognition/
 
 ---
 
-## ⚙️ Installation
+#  Technologies Used
 
-### Clone Repository
+| Technology | Purpose |
+|------------|----------|
+| Python | Programming Language |
+| TensorFlow | Deep Learning |
+| Keras | CNN Model |
+| Streamlit | Web Application |
+| NumPy | Numerical Computing |
+| Pillow | Image Processing |
+| Matplotlib | Visualization |
+| Scikit-learn | Machine Learning Utilities |
+| Pandas | Data Processing |
+
+---
+
+#  Dataset
+
+**Dataset Name:** MNIST Handwritten Digits
+
+- 70,000 handwritten images
+- 10 Classes (0–9)
+- Image Size: 28 × 28 pixels
+- Grayscale Images
+
+The dataset is automatically downloaded using TensorFlow during training.
+
+---
+
+#  Installation
+
+## Clone Repository
 
 ```bash
 git clone https://github.com/your-username/MNIST-Digit-Recognition.git
 ```
 
-### Move into Project Folder
+---
+
+## Move to Project Folder
 
 ```bash
 cd MNIST-Digit-Recognition
 ```
 
-### Create Virtual Environment
+---
+
+## Create Virtual Environment
 
 ```bash
 python -m venv venv
 ```
 
-### Activate Virtual Environment
+---
 
-#### Windows
+## Activate Environment
+
+### Windows
 
 ```bash
 venv\Scripts\activate
 ```
 
-#### Linux / macOS
+### Linux / macOS
 
 ```bash
 source venv/bin/activate
 ```
 
-### Install Dependencies
+---
+
+## Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -111,70 +170,103 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 Train the Model
+#  Train the Model
 
 ```bash
 python train.py
 ```
 
-The trained model will be saved inside:
+The trained CNN model will automatically be saved inside:
 
-```
+```text
 model/mnist_model.keras
 ```
 
 ---
 
-## ▶️ Run the Streamlit Application
+#  Run the Application
 
 ```bash
 streamlit run app.py
 ```
 
-After running, the application will automatically open in your web browser.
+The application will automatically open in your browser.
 
 ---
 
-## 📷 How to Use
+#  How to Use
 
-1. Open the Streamlit application.
-2. Upload a handwritten digit image.
-3. Click **Predict Digit**.
-4. View:
-   - Predicted Digit
-   - Confidence Score
-   - Probability Chart
-   - Model Performance
+### Step 1
 
----
+Run the Streamlit application.
 
-## 📊 Model Information
+### Step 2
 
-| Feature | Details |
-|----------|---------|
-| Model | Convolutional Neural Network (CNN) |
-| Dataset | MNIST |
-| Image Size | 28 × 28 Pixels |
-| Classes | 10 (Digits 0–9) |
-| Framework | TensorFlow/Keras |
+Upload a handwritten digit image.
 
----
+### Step 3
 
-## 📈 Future Improvements
+Click **Predict Digit**.
 
-- Drawing canvas for handwritten digits
-- Dark/Light mode
-- Prediction history
-- Download prediction report
-- Interactive charts
-- Mobile-friendly dashboard
+### Step 4
+
+View:
+
+- Predicted Digit
+- Confidence Score
+- Probability Chart
+- Model Performance
 
 ---
 
-## 👩‍💻 Developed By
+#  Model Performance
 
-**Hania Eman**
+The project automatically generates:
 
-AI & Data Science Student
+- Training Accuracy Graph
+- Validation Accuracy Graph
+- Training Loss Graph
+- Validation Loss Graph
+
+These graphs help visualize the learning performance of the CNN model.
 
 ---
+
+#  Future Improvements
+
+- Drawing Canvas for handwritten digits
+- Dark Mode
+- Light Mode
+- Prediction History
+- Download Prediction Report
+- Interactive Charts
+- Mobile Responsive Dashboard
+- Multiple Language Support
+
+---
+
+#  Skills Demonstrated
+
+- Deep Learning
+- Computer Vision
+- Image Classification
+- CNN Architecture
+- TensorFlow
+- Keras
+- Streamlit
+- Data Preprocessing
+- Model Deployment
+- Python Programming
+
+---
+
+#  Developed By
+
+## **Hania Eman**
+
+**AI & Data Science Student**
+
+Passionate about Artificial Intelligence, Deep Learning, Computer Vision, Machine Learning, and Data Science.
+
+---
+
